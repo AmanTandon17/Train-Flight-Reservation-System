@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train&FlightReservationSystem</title>
+</head>
+<style>
+	*{	
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: sans-serif;
+		background:url("image2.jpg") no-repeat center center/cover;
+		height: 100vh;
+	}
+	nav {
+		background-color:   rgb(135, 137, 172);
+		overflow: auto;
+	}
+	nav a{
+		color: white;
+		text-decoration: none;
+	}
+	nav h1{
+		float: left;
+		padding-top: 10px;
+	}
+	nav ul{
+		float: right;
+		list-style: none;
+	}
+	nav ul li{
+		float: left;
+	}
+	nav ul li a{
+		display: block;
+		padding:15px 20px;
+	}
+	nav ul li a:hover{
+		background-color: rgb(135, 137, 172); 
+		color: #f4f4f4;
+		border-radius: 5px;
+	}
+	.max{
+		max-width: 1100px;
+		margin: auto;
+	}
+	#navbar{
+		background-color:  rgb(89, 94, 177);
+		
+	}
+	#navbar ul{
+		float: left;
+	} 
+	.clr{
+		clear: both;
+	}
+	#content{
+		float: left;
+		text-align: center;
+		padding: 60px;
+	}
+    #content h2{
+		font-size: 34px;
+        font-style: italic;
+	}
+     
+	#content ul li a{
+		text-decoration: none;
+		display: block;
+		font: size 20;px;
+		color: rgb(135, 137, 172);
+		padding: 7px 10px;
+        text-align: left;
+	}
+    #content ul li a:hover{
+		background-color: rgb(89, 94, 177);
+		color:#f4f4f4;
+		border-radius:7px;
+	}
+	#main-max{
+		max-width: 900px;
+		margin: auto;
+	}
+	.form{
+		padding: 20px;
+	}
+	.form h2{
+		font-size: 30px;
+		color: #333232;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+	}
+	label{
+		display: block;
+		margin-bottom: 5px;
+		font-size: 18px;
+	}
+	button a{
+		text-decoration: none;
+	}
+	button{
+		padding: 8px 10px;
+		margin: 10px;
+	}
+	button:hover{
+		background-color: lightgrey;
+	}
+	input{
+		width: 70%;
+		padding: 2px;
+	}
+	#main-max1{
+        font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+		max-width: 700px;
+		margin: auto;
+	}
+	.footer{
+	background-color: gray;
+	color: white;
+	padding:8px 0px;
+	text-align: center;
+}
+    #jitu{
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+	<script>
+	function myFunction() {
+ 	 alert("Hello! Welcome to Train & Flight Booking Website");
+}
+</script>
+<body onload="myFunction()">
+     
+    <nav>
+		<div class="max">
+			<h1><a href="#">TFRS</a></h1>
+		<ul>
+			<li><a href="password validation.html">Login</a></li>
+			<li><a href="#">Signup</a></li>
+		</ul>
+		</div>
+	</nav>
+     
+
+    <nav id="navbar">
+		<div class="max">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="booking.html">Book Ticket</a></li>
+			<li><a href="ct.html">Contact Us</a></li>
+			<li><a href="myaccount.html">My Account</a></li>
+			<li><a href="cla.html">About Us</a></li>
+		</ul>
+		</div>
+		<div class="clr"></div>
+	</nav>
+    
+    <section >
+		<div id="main-max">
+				<div id="content">
+			<h2 id="jitu">Train Booking</h2>
+		<ul>
+            <br>
+            <br>
+            
+			<li><a href="#">General</a></li>
+			<li><a href="#">Tatkal</a></li>
+			<li><a href="#">Preminum</a></li>
+			<li><a href="#">Refund</a></li>
+		</ul>
+		</div>
+		<div id="content">
+			<h2 id="jitu">Flight Booking</h2>
+		<ul>
+            <br>
+            <br>
+            
+			<li><a href="#">One Way</a></li>
+			<li><a href="#">Round</a></li>
+			<li><a href="#">Preminum</a></li>
+			<li><a href="#">Refund</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="clr"></div>
+	</section>
+    
+	<div class="form">
+		<div id="main-max1">
+			<h2>Booking</h2>
+		<form action="process.php">
+            <br>
+             
+			<label name="from">Form</label>
+        <input type="text" name="from"><br>
+        <br>
+		<label name="to">To</label>
+        <input type="text" name="to"><br>
+        <br>
+		<label name="date">Date</label>
+		<input type="date" name="date"><br>
+        <br>
+        <label name="time">Time</label>
+		<input type="Time" name="time"><br>
+        <br>
+        <button><a href="#">Submit</a></button>
+		</form>
+		</div>
+	</div>
+	<div class="footer">Copyright &copy; 2020.All Right Reserved.</div>
+</body>
+</html>
